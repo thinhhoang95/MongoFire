@@ -5,8 +5,7 @@
   "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel test.js -d dist",
-    "start": "npm run build && node dist/test.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +14,9 @@
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
-    "mongodb": "4.13"
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongodb": "4.13",
+    "node-fetch": "^2.6.8"
   }
 }

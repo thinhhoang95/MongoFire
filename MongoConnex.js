@@ -1,0 +1,8 @@
+const {MongoClient} = require('mongodb');
+
+
+const uri = "mongodb://localhost:27017";
+const client = new MongoClient(uri, {useNewUrlParser: true, useUnifiedTopology: true});
+const db = client.db("firemongo");
+
+module.exports = {uri, client, db}
